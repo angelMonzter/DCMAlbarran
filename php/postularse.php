@@ -7,8 +7,9 @@ $correo=$_POST['correo'];
 $telefono= $_POST['telefono'];
 $detalle=$_POST["detalles"]; 
 $estudiante=$_POST['estudiante'];
+$muni=$_POST["municipio"];
 //$encrip=password_hash($contrasena,PASSWORD_DEFAULT);
-if (empty($nombre && $correo && $telefono && $detalle && $estudiante)) {
+if (empty($nombre && $correo && $telefono && $detalle && $estudiante && $muni)) {
 	?>
 	<script type="text/javascript">
 		alert("Favor de llenar todos los campos...");
@@ -16,7 +17,7 @@ if (empty($nombre && $correo && $telefono && $detalle && $estudiante)) {
 	</script>
 	<?php
 }else{
-	$consulta=mysqli_query($conex,"insert into postular (`id_post`, `nombre`, `telefono`, `estudiante`, `correo`, `detalles`) values (NULL, '$nombre', '$telefono', '$estudiante', '$correo', '$detalle')") or die (mysql_error($consulta));
+	$consulta=mysqli_query($conex,"insert into postular (`id_post`, `nombre`, `telefono`, `estudiante`, `correo`, `detalles`,`municipio`, `municipio2`) values (NULL, '$nombre', '$telefono', '$estudiante', '$correo', '$detalle', '1', '$muni')") or die (mysql_error($consulta));
 
 	?>
 <body>
