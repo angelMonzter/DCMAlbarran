@@ -130,7 +130,7 @@ function sololetras(e){
 				<td><?php echo $mostrar['estudiante']?></td>
 				<td><?php echo $mostrar['correo']?></td>
 				<td><?php echo $mostrar['detalles']?></td>
-				<td><?php echo $mostrar['municipio2']?></td>
+				<td><?php echo $mostrar['municipio']?></td>
         <td >
           <a onclick="preguntar(<?php $mostrar['id_post'];?>)" class="button small" id="boton" href="php/borrar.php?id_post=<?php echo $mostrar['id_post']?>">Eliminar</a>
           
