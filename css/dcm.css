@@ -1,0 +1,32 @@
+@media screen and (max-width: 1000px) {
+  iframe{position: relative;}
+  iframe{
+    width: 350px;
+    height: 200px;
+}
+@media screen and (max-width: 1200px) {
+  .contactanos hr{display: none;}
+  .contactanos div{
+    text-align: center;  
+}
+@media screen and (max-width: 1200px) {
+  #conoce {display:;}
+  #conoce{
+    float: left;
+}
+@media screen and (max-width: 1200px) {
+  #video {display:;}
+  #video iframe{
+    padding-top: 50px;
+    width: 320px;
+    height: 400px;
+}
+@media screen and (max-width: 1200px) {
+  #maps {display:;}
+  #maps {
+    width: 320px;
+    height: 400px;
+}
+
+
+
