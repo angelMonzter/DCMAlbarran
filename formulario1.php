@@ -176,7 +176,7 @@ function sololetras(e){
      
       </div>
 
-     <li><a href="consulta.php" class="fuente">Ver Registros</a></li>
+    <li><a href="consulta-dcmalbarran.php" class="fuente">Ver Registros</a></li>
   </div>
 
  </form>
