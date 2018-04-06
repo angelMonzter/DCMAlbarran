@@ -1,14 +1,14 @@
 <?php
 include("conexion.php");
 conectar();
-// variables
+
 $nombre= $_POST['nombre'];
 $correo=$_POST['correo'];
 $telefono= $_POST['telefono'];
 $detalle=$_POST["detalles"]; 
 $estudiante=$_POST['estudiante'];
 $muni=$_POST["municipio"];
-//$encrip=password_hash($contrasena,PASSWORD_DEFAULT);
+
 if (empty($nombre && $correo && $telefono && $detalle && $estudiante && $muni)) {
 	?>
 	<script type="text/javascript">
@@ -17,7 +17,7 @@ if (empty($nombre && $correo && $telefono && $detalle && $estudiante && $muni)) 
 	</script>
 	<?php
 }else{
-	$consulta=mysqli_query($conex,"insert into postular (`id_post`, `nombre`, `telefono`, `estudiante`, `correo`, `detalles`,`municipio`, `municipio2`) values (NULL, '$nombre', '$telefono', '$estudiante', '$correo', '$detalle', '1', '$muni')") or die (mysql_error($consulta));
+	$consulta=mysqli_query($conex,"insert into postular (`id_post`, `nombre`, `correo`, `telefono`, `detalles`,`estudiante`, `municipio`) values (NULL, '$nombre', '$correo', '$telefono', '$detalle', '$estudiante','$muni')") or die (mysql_error($consulta));
 
 	?>
 <body>
